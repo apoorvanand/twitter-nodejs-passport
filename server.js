@@ -12,7 +12,7 @@ var Strategy = require('passport-twitter').Strategy;
 passport.use(new Strategy({
   consumerKey: `25Ud16ABJAOfhpvTYiaXC0HH3`,
   consumerSecret:`e0Cs7snCjBizPbo3sfYje0SqSkgK1GPEirrDCjftaHQJ6iD1c6`,
-  callbackURL: "http://127.0.0.1:3000/login/twitter/return"
+  callbackURL: "http://ec2-54-191-56-143.us-west-2.compute.amazonaws.com:3000/login/twitter/return"
   },
   function(token, tokenSecret, profile, cb) {
     // In this example, the user's Twitter profile is supplied as the user
